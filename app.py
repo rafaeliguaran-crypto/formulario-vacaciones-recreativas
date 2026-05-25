@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, redirect, url_for
+
+from flask import Flask, render_template, request, redirect, url_for, send_file
 from openpyxl import Workbook, load_workbook
 import os
 
@@ -138,6 +139,13 @@ def debug():
         "ocupados": obtener_horarios_ocupados(),
         "disponibles": obtener_horarios_disponibles()
     }
+@app.route("/descargar-excel")
+def descargar_excel():
+    return send_file(
+        ARCHIVO_EXCEL,
+        as_attachment=True
+    )
 
 if __name__ == "__main__":
     app.run()
+
