@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registros</title>
+</head>
+<body>
+    <h1>Inscripciones registradas</h1>
+
+    <table border="1" cellpadding="8">
+        {% for fila in datos %}
+        <tr>
+            {% for campo in fila %}
+            <td>{{ campo }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/">Volver</a>
+</body>
+</html>
