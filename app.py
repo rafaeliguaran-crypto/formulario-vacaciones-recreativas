@@ -14,8 +14,7 @@ HORARIOS = [
     "Miércoles 17 de Junio entre las 2:00 p. m. y 5:00 p. m.",
     "Jueves 18 de Junio entre las 9:00 a. m. y 12:00 p. m.",
     "Jueves 18 de Junio entre las 2:00 p. m. y 5:00 p. m.",
-    "Viernes 19 de Junio entre las 9:00 a. m. y 12:00 p. m.",
-    "Viernes 19 de Junio entre las 2:00 p. m. y 5:00 p. m."
+    
 ]
 
 ENCABEZADOS = [
@@ -149,3 +148,4 @@ def descargar_excel():
 if __name__ == "__main__":
     app.run()
 
+git commit -m "Agrego sección de materiales"
